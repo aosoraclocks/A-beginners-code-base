@@ -1,0 +1,141 @@
+This dice roller my first program, it was devloped off the concept of the program from the website: http://www.pythonforbeginners.com/code-snippets-source-code/game-rolling-the-dice which hosts many great basic codes that, while dated in python 2.7 for the most part, is a very useful resource for those who who have no insperation and want to create a few small projects.
+For those who don’t trust links online:
+
+import random
+min = 1
+max = 6
+
+roll_again = "yes"
+
+while roll_again == "yes" or roll_again == "y":
+    print "Rolling the dices..."
+    print "The values are...."
+    print random.randint(min, max)
+    print random.randint(min, max)
+
+    roll_again = raw_input("Roll the dices again?")
+
+From this program I was inspired to further develop on the ability to roll dice, with the current system you can only roll two dice at a time, I thought that this was too small and wanted to increase the amount of dice that can be used at once so using the format of a contact manager off of youtube: (I could not find the playlist used) and changed it to fit my uses which resulted in the code looking like this:
+
+import random
+min=1
+max=6
+
+def main():
+    print("Dice Roller")
+
+choice=[]
+
+#the Menu of choices
+choice=0
+while choice != 5:
+    print("1) one d6’s")
+    print("2) two d6’s")
+    print("3) three d6’s")
+    print("4) four d6’s")
+    print("5) Quit")
+    choice=eval(input())
+
+    if choice ==1:
+        print ("Rolling the dices...")
+        print ("The values are....")
+        print (random.randint(min,max))
+
+    elif choice ==2:
+        print ("Rolling the dices...")
+        print ("The values are....")
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+
+    elif choice ==3:
+        print ("Rolling the dices...")
+        print ("The values are....")
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+
+    elif choice ==4:
+        print ("Rolling the dices...")
+        print ("The values are....")
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+        print (random.randint(min,max))
+
+    elif choice ==5:
+        print ("Quitting")
+
+    else:
+        print("Invalid Response")
+
+main()
+
+Which, while gave more uses, was very limited in how many dice could be used at once; asking myself, what would happen if the user wanted to use more dice then that which was provided? using a for loop I increased the size of dice able to be used at once to however many that is desired at once: 
+
+#Using the idea of infinite dice capabilities this program was made
+import random
+min=1
+max=6
+
+def main():
+    print("Dice Roller")
+
+#This is a for loop combined with a while loop to give the user the ability
+#To try again or to exit the program
+number = int(input("Enter how many d6's you want: "))
+print("Rolling the d6's..")
+print("The results are..")
+for i in range(0,number):
+    print(random.randint(min,max))
+while True:
+    a = input("Would you like to roll again?' ' (y/n) ")
+    if a=="y":
+        number = int(input("Enter how many d6's you want: "))
+        print("Rolling the d6's..")
+        print("The results are..")
+        for i in range(0,number):
+            print(random.randint(min,max))
+    elif a=="n":
+        print ("Exiting..")
+        exit()
+
+main()
+
+
+Yet this too was too limited. Now I asked myself, what if the user wanted to use more than just a d6? After some time i believed that I had figured out what i needed to do and added variables to the program which gave me:
+
+import random
+min=1
+
+def main():
+   print("Dice Roller")
+
+#As with the last version this is a for loop but with multiple variables
+dice = int(input("How many dice would you like?: "))
+faces = int(input("How many faces should the dice have?: "))
+max = faces
+print("Rolling the dice..")
+print("The results are..")
+for dice in range(1,(faces+1)):
+    print (random.randint(1,max))
+#This while statement is to allow the user to continue after first use
+while True:
+    a = input("Would you like to roll again?' ' (y/n) ")
+    if a=="y":
+        dice = int(input("How many dice would you like?: "))
+        faces = int(input("How many faces should the dice have?: "))
+        max = faces
+        print("Rolling the dice..")
+        print("The results are..")
+        for dice in range(1,(faces+1)):
+            print (random.randint(1,max))
+    elif a=="n":
+        print ("Exiting..")
+        exit()
+    else:
+        print ("Invalid Input")
+main()
+
+With a few changes the original program was changed to better fit situations I had in mind to the extent that I am proud to call it my own for having expanded from the concept idea and combing from other programs that had no relations with the original code before twisting it into coding that I constructed off of base examples.
+
+I hope you enjoyed reading this or found it interesting and that this would help other newcomers create their programms, if you have any questions or comments I would be happy to see them.

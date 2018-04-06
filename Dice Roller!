@@ -1,4 +1,7 @@
-This dice roller my first program, it was devloped off the concept of the program from the website: http://www.pythonforbeginners.com/code-snippets-source-code/game-rolling-the-dice which hosts many great basic codes that, while dated in python 2.7 for the most part, is a very useful resource for those who who have no insperation and want to create a few small projects.
+This dice roller my first program, it was devloped off the concept of the program from the website: 
+http://www.pythonforbeginners.com/code-snippets-source-code/game-rolling-the-dice 
+which hosts many great basic codes that, while dated in python 2.7 for the most part, 
+is a very useful resource for those who who have no insperation and want to create a few small projects.
 For those who don’t trust links online:
 
 import random
@@ -15,7 +18,11 @@ while roll_again == "yes" or roll_again == "y":
 
     roll_again = raw_input("Roll the dices again?")
 
-From this program I was inspired to further develop on the ability to roll dice, with the current system you can only roll two dice at a time, I thought that this was too small and wanted to increase the amount of dice that can be used at once so using the format of a contact manager off of youtube: (I could not find the playlist used) and changed it to fit my uses which resulted in the code looking like this:
+From this program I was inspired to further develop on the ability to roll dice,
+with the current system you can only roll two dice at a time, 
+I thought that this was too small and wanted to increase the amount of dice that can be used at once so using the format of a 
+contact manager off of youtube: (I could not find the playlist used) and changed it to fit my uses which resulted in the code 
+looking like this:
 
 import random
 min=1
@@ -70,7 +77,9 @@ while choice != 5:
 
 main()
 
-Which, while gave more uses, was very limited in how many dice could be used at once; asking myself, what would happen if the user wanted to use more dice then that which was provided? using a for loop I increased the size of dice able to be used at once to however many that is desired at once: 
+Which, while gave more uses, was very limited in how many dice could be used at once; asking myself,
+what would happen if the user wanted to use more dice then that which was provided? using a for loop 
+I increased the size of dice able to be used at once to however many that is desired at once: 
 
 #Using the idea of infinite dice capabilities this program was made
 import random
@@ -102,7 +111,8 @@ while True:
 main()
 
 
-Yet this too was too limited. Now I asked myself, what if the user wanted to use more than just a d6? After some time i believed that I had figured out what i needed to do and added variables to the program which gave me:
+Yet this too was too limited. Now I asked myself, what if the user wanted to use more than just a d6? 
+After some time i believed that I had figured out what i needed to do and added variables to the program which gave me:
 
 import random
 min=1
@@ -136,6 +146,9 @@ while True:
         print ("Invalid Input")
 main()
 
-With a few changes the original program was changed to better fit situations I had in mind to the extent that I am proud to call it my own for having expanded from the concept idea and combing from other programs that had no relations with the original code before twisting it into coding that I constructed off of base examples.
+With a few changes the original program was changed to better fit situations I had in mind to the extent that
+I am proud to call it my own for having expanded from the concept idea and combing from other programs that had no relations
+with the original code before twisting it into coding that I constructed off of base examples.
 
-I hope you enjoyed reading this or found it interesting and that this would help other newcomers create their programms, if you have any questions or comments I would be happy to see them.
+I hope you enjoyed reading this or found it interesting and that this would help other newcomers create their programms, 
+if you have any questions or comments I would be happy to see them.

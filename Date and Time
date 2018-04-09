@@ -1,0 +1,23 @@
+Saw a time printer and thought i'd put the one i had here:
+
+import datetime
+
+now = datetime.datetime.now()
+
+#To get the entire date including millisecond
+print (now)
+
+#To show a single affix of the date exluding millisecond 
+#because i think it's ugly.
+print("This is your year:")
+print(now.year)
+print("This is your month:")
+print(now.month)
+print("This is your day:")
+print(now.day)
+print("This is your hour:")
+print(now.hour)
+print("This is your minute:")
+print(now.minute)
+print("This is your second:")
+print(now.second)

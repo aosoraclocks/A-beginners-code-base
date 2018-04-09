@@ -1,0 +1,105 @@
+this program was amde with asing how to decide what kind of open project you should get invovled in, afte4r looking sifting
+though mounds of the interent i found a site and used their questions, this is what was created:
+Checklist = ['Question1', 'Question2', 'Question3', 'Question4', 'Question5', 'Question6', 'Question7', 'Question8', 'Question9', 'Question10', 'Question11', 'Question12', 'Question13', 'Question14', 'Question15', 'Question16', 'Question17']
+
+print ("Please answer with 'y' if answer is yes and 'n' for no.")
+question1 = input("Does it have a license?: ")
+if question1 =='y':
+    print ("Good!")
+elif question1 =='n':
+    del Checklist[0]
+    print ("Oh dear..")
+else:
+    ("Invalid Answer")
+question2 = int(input("How many weeks since the latest commit?(if less then a week, starting from sunday use negatiive i.e -1 = sunday, -7 = monday): "))
+if question2 <= 2:
+    print ("Good!")
+else:
+    del Checklist[1]
+    print ("Oh dear..")
+question3=int(input("How many contributors does the project have?: "))
+if question3 >= 2:
+    print ("Good!")
+else:
+    del Checklist[2]
+    print ("Oh dear..")
+question4=(input("Do people commit often?"))
+if question4 =='y':
+    print ("Good!")
+else:
+    del Checklist[3]
+    print ("Oh dear..")
+question5=int(input("How many open issues are there?: "))
+if question5 >= 2:
+    print ("Good!")
+else:
+    del Checklist[4]
+    print ("Oh dear..")
+question6=input("Do maintainers respond quickly to issues when they are opened?: ")
+if question6 == 'y':
+    print ("Good!")
+else:
+    del Checklist[5]
+    print ("Oh dear..")
+question7=input("Is there active discussions on the issue?: ")
+if question7 == 'y':
+    print ("Good!")
+else:
+    del Checklist[6]
+    print ("Oh dear..")
+question8=input("Are the issues recent?: ")
+if question8 == 'y':
+    print ("Good!")
+else:
+    del Checklist[7]
+    cprint ("Oh dear..")
+question9=input("Are issues getting closed?: ")
+if question9 == 'y':
+    print ("Good!")
+else:
+    del Checklist[8]
+    print ("Oh dear..")
+question10=int(input("How many open pull requests are there?: "))
+if question10 >= 2:
+    print ("Good!")
+else:
+    del Checklist[9]
+    print ("Oh dear..")
+question11=input("Do maintainers respond quickly to pull requests when they are opened?: ")
+if question11 == 'y':
+    print ("Good!")
+else:
+    del Checklist[10]
+    print ("Oh dear..")
+question12=input("Is there active discussion on the pull requests?: ")
+if question12 =='y':
+    print ("Good!")
+else:
+    del Checklist[11]
+    print ("Oh dear..")
+question13=input("Are the pull requests recent?: ")
+if question13 == 'y':
+    print ("Good!")
+else:
+    del Checklist[12]
+    print ("Oh dear..")
+question14=input("Were pull requests recently merged?: ")
+if question14 =='y':
+    print ("Good!")
+else:
+     del Checklist[12]
+     print ("Oh dear..")
+question15=input("Do the maintainers respond helpfully to questions in issues?: ")
+if question15 == 'y':
+    print ("Good!")
+else:
+    del Checklist[13]
+    print ("Oh dear..")
+question16=("Do maintainers thank people for their contributions?: ")
+if question16 =='y':
+    print ("Good!")
+else:
+    del Checklist[15]
+    print ("Oh dear..")
+print("10 and below are not reccomened.")
+print("It got a" ,len(Checklist), "out of 16.")

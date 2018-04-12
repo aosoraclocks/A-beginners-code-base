@@ -1,0 +1,30 @@
+print("Story")
+answer =int(input("Choose 1,2 or 3: "))
+if answer == 1:
+    print("story one")
+    answer1=int(input("Choose 1,2 or 3: "))
+    if answer1 == 1:
+        print("story arch one, one")
+    elif  answer1==2:
+        print("story arch one, two")
+    elif  answer1==3:
+        print("story arch one, three")
+        print
+elif answer ==2:
+    print("story two")
+    answer2=int(input("Choose 1,2 or 3: "))
+    if answer2 == 1:
+        print("story arch two, one")
+    elif  answer2==2:
+        print("story arch two, two")
+    elif  answer2==3:
+        print("story arch two, three")
+elif answer ==3:
+    print("story three")
+    answer3=int(input("Choose 1,2 or 3: "))
+    if answer3 == 1:
+        print("story arch three, one")
+    elif  answer3==2:
+        print("story arch three, two")
+    elif  answer3==3:
+        print("story arch three, three")
